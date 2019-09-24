@@ -3,6 +3,6 @@
   "description": "",
   "license": "MIT",
   "dependencies": {
-    "@nebulario/microservice-resources": "link:./../microservice-resources"
+    "@nebulario/microservice-resources": "1.70.0-resources-service-prod"
   }
 }
