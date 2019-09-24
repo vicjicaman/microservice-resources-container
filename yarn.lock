@@ -17,9 +17,18 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@nebulario/microservice-resources@link:../microservice-resources":
-  version "0.0.0"
-  uid ""
+"@nebulario/microservice-resources@1.70.0-resources-service-prod":
+  version "1.70.0-resources-service-prod"
+  resolved "https://registry.yarnpkg.com/@nebulario/microservice-resources/-/microservice-resources-1.70.0-resources-service-prod.tgz#5e92a1578772af0e2107c3233a5e2785c8fc4c33"
+  integrity sha512-C8ePmjhBNc5En949MHV26/tcFdmsESvM0rmL66Es1M4VKPbm+sY0QL10gXkXDNmzjKs+bn+FYP8Y8ulQrwLTvQ==
+  dependencies:
+    "@babel/runtime" "^7.6.0"
+    "@babel/runtime-corejs3" "^7.6.0"
+    bootstrap "^4.3.1"
+    express "^4.16.4"
+    font-awesome "^4.7.0"
+    jquery "^3.4.1"
+    popper.js "^1.15.0"
 
 accepts@~1.3.7:
   version "1.3.7"
