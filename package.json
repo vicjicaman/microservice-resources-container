@@ -3,6 +3,6 @@
   "description": "",
   "license": "MIT",
   "dependencies": {
-    "@nebulario/microservice-resources": "1.70.0-resources-service-prod"
+    "@nebulario/microservice-resources": "1.70.0-master"
   }
 }
