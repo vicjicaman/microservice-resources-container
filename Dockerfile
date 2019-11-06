@@ -1,16 +1,12 @@
-FROM node:8.13.0-alpine
+FROM nginx:alpine
 
-RUN mkdir -p /app
-RUN chown -R node /app
-
-USER node
-
-WORKDIR /app/node_modules/@nebulario/microservice-resources
+ENV CONFIG_HOME=/env/app/dist
+RUN mkdir -p ${CONFIG_HOME}
 
 ARG CACHEBUST=1
 RUN echo "CACHE $CACHEBUST"
+COPY ./dist ${CONFIG_HOME}
 
-COPY --chown=node:node ./node_modules /app/node_modules
 
-ENTRYPOINT ["node"]
-CMD ["dist/index.js"]
+#ENTRYPOINT ["/bin/bash", "-c", "nginx", "-c", "/env/app/dist"]
+CMD ["nginx", "-c", "/env/app/dist/nginx.conf"]
